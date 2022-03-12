@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FirstKotlinProject" parent="Theme.MaterialComponents.DayNight.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/appBlue</item>
+        <item name="colorPrimaryVariant">@color/appBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/appBlue</item>
+        <item name="colorSecondaryVariant">@color/appBlue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+    </style>
+
+    <style name="BottomNavigation">
+        <item name="android:background">@drawable/bottom_bar_bg</item>
+        <item name="itemIconTint">@drawable/navigation_bar_item_bg</item>
+        <item name="itemTextColor">@drawable/navigation_bar_item_bg</item>
+    </style>
+</resources>
