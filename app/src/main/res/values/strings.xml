@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">Newspaper\n Board</string>
+    <string name="app_name">M Ammar Tentwenty MovieDB</string>
     <string name="home">HOME</string>
     <string name="topics">TOPICS</string>
     <string name="media">Media</string>
     <string name="bookmark">BOOKMARK</string>
     <string name="alert">ALERT</string>
-    <string name="newspapper_n_board">Newspaper\n Board</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_watch">Watch</string>
     <string name="title_dashboard">Dashboard</string>

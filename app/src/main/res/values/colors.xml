@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="appRed">#BF0D36</color>
-    <color name="appBlue">#2950F1</color>
-    <color name="appDarkMainColor">#2E2739</color>
-    <color name="selectedIconColor">#FFFFFF</color>
-    <color name="unselectedIconColor">#817C87</color>
+
+
+    <color name="app_white">#FFFFFF</color>
+    <color name="app_brown">#CD9D0F</color>
+    <color name="app_blue">#564CA3</color>
+    <color name="app_pink">#E26CA5</color>
+    <color name="app_green_blue">#15D2BC</color>
+    <color name="app_silver">#DBDBDF</color>
+    <color name="app_sky_blue">#61C3F2</color>
+    <color name="app_gray">#827D88</color>
+    <color name="app_light_gray">#F6F6FA</color>
+    <color name="app_main">#2E2739</color>
+
 
 </resources>

@@ -42,8 +42,11 @@ class MainActivity : BaseActivity() {
                 R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        nav_view.setupWithNavController(navController)
 
+//        setupActionBarWithNavController(
+//            navController,
+//            appBarConfiguration
+//        )//this will hide the title bar titles
+        nav_view.setupWithNavController(navController)
     }
 }

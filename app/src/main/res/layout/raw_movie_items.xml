@@ -16,7 +16,7 @@
         android:elevation="2dp"
         android:fontFamily="@font/poppins_medium"
         android:text="The King's Man"
-        android:textColor="@color/white"
+        android:textColor="@color/app_white"
         android:textSize="18sp" />
 
     <com.google.android.material.card.MaterialCardView

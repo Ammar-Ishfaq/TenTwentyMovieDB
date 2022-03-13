@@ -9,8 +9,6 @@
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_watch"
         android:title="@string/title_watch" />
-
-
     <item
         android:id="@+id/navigation_media_library"
         android:icon="@drawable/ic_media"
@@ -19,6 +17,4 @@
         android:id="@+id/navigation_more"
         android:icon="@drawable/ic_menu"
         android:title="@string/more" />
-
-
 </menu>
