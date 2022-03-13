@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.muhammad_ammar.tentwenty.view.fragments.home.HomeFragment"
+        android:name="com.muhammad_ammar.tentwenty.view.fragments.home.WatchFragment"
         android:label="@string/title_watch"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_watch" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
             app:destination="@id/navigation_dashboard" />

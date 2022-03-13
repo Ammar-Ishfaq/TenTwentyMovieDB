@@ -10,16 +10,16 @@ import com.muhammad_ammar.tentwenty.koinDI.homeModule
 import com.muhammad_ammar.tentwenty.util.MaterialDialogHelper
 import com.muhammad_ammar.tentwenty.view.fragments.base.MainMVVMNavigationFragment
 import com.muhammad_ammar.tentwenty.extensions.setupProgressDialog
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_watch.*
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import org.koin.core.module.Module
 
-class HomeFragment :
-    MainMVVMNavigationFragment<HomeFragmentViewModel>(HomeFragmentViewModel::class) {
+class WatchFragment :
+    MainMVVMNavigationFragment<WatchFragmentViewModel>(WatchFragmentViewModel::class) {
 
 
-    override fun getLayoutResId() = R.layout.fragment_home
+    override fun getLayoutResId() = R.layout.fragment_watch
     override fun registerModule(): Module {
         return homeModule
     }
@@ -39,12 +39,12 @@ class HomeFragment :
         super.onViewCreated(view, savedInstanceState)
         fragment_home_dashboard.setOnClickListener {
             findNavController().navigate(
-                HomeFragmentDirections.actionNavigationHomeToNavigationDashboard()
+                WatchFragmentDirections.actionNavigationHomeToNavigationDashboard()
             )
         }
         fragment_home_notification.setOnClickListener {
             findNavController().navigate(
-                HomeFragmentDirections.actionNavigationHomeToNavigationNotifications(
+                WatchFragmentDirections.actionNavigationHomeToNavigationNotifications(
                     "A testing Passing Arguments to the Controller"
                 )
             )

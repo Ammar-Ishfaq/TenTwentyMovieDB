@@ -9,7 +9,7 @@ import com.muhammad_ammar.tentwenty.util.AppUtils
 import com.muhammad_ammar.tentwenty.viewmodel.BaseViewModel
 import kotlinx.coroutines.launch
 
-class HomeFragmentViewModel constructor(
+class WatchFragmentViewModel constructor(
     private val sharedWebService: SharedWebService,
 ) : BaseViewModel() {
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".view.fragments.home.HomeFragment">
+    tools:context=".view.fragments.home.WatchFragment">
 
     <TextView
         android:id="@+id/text_home"
