@@ -15,7 +15,7 @@ import com.bumptech.glide.request.target.Target
 import com.muhammad_ammar.tentwenty.R
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.Result
 import com.muhammad_ammar.tentwenty.util.AppUtils.Companion.BaseImageUrl
-import kotlinx.android.synthetic.main.raw_movie_items.view.*
+import kotlinx.android.synthetic.main.raw_search_items.view.*
 
 class SearchAdapter(private val context: Context) :
     RecyclerView.Adapter<SearchAdapter.SearchAdapterViewHolder>() {
@@ -26,7 +26,7 @@ class SearchAdapter(private val context: Context) :
         RecyclerView.ViewHolder(itemView) {
         val ImageView = itemView.rv_movie_img
         val title = itemView.rv_movie_text
-        val imageProgress = itemView.rv_movie_progress_bar
+        val imageProgress = itemView.fragment_movie_detail_progress_bar
     }
 
     public fun submitList(list: List<Result>) {
@@ -81,6 +81,7 @@ class SearchAdapter(private val context: Context) :
         else {
             holder.imageProgress.visibility = View.GONE
         }
+
     }
 
     override fun getItemCount(): Int {

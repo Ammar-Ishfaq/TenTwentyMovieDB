@@ -16,11 +16,10 @@ import com.muhammad_ammar.tentwenty.R
 import com.muhammad_ammar.tentwenty.adapter.SearchSecondAdapter.*
 import com.muhammad_ammar.tentwenty.models.genere.Genre
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.Result
-import com.muhammad_ammar.tentwenty.util.AppUtils
 import com.muhammad_ammar.tentwenty.util.AppUtils.Companion.BaseImageUrl
 import kotlinx.android.synthetic.main.raw_search_second_items.view.*
 
-class SearchSecondAdapter(private val context: Context) :
+class SearchSecondAdapter(private val context: Context, private val mListener: (Result) -> Unit) :
     RecyclerView.Adapter<SearchAdapterViewHolder>() {
 
     private var movieList = mutableListOf<Result>()
@@ -31,7 +30,7 @@ class SearchSecondAdapter(private val context: Context) :
         val ImageView = itemView.rv_movie_img
         val title = itemView.rv_movie_text
         val genre = itemView.rv_movie_genre
-        val imageProgress = itemView.rv_movie_progress_bar
+        val imageProgress = itemView.fragment_movie_detail_progress_bar
     }
 
     fun submitList(list: List<Result>, genreList: List<Genre>) {
@@ -87,6 +86,9 @@ class SearchSecondAdapter(private val context: Context) :
                 .into(holder.ImageView)
         else {
             holder.imageProgress.visibility = View.GONE
+        }
+        holder.itemView.setOnClickListener {
+            mListener.invoke(items) // <- item instance of ItemObject
         }
     }
 

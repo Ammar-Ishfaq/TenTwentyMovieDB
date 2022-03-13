@@ -17,7 +17,7 @@ import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.Result
 import com.muhammad_ammar.tentwenty.util.AppUtils.Companion.BaseImageUrl
 import kotlinx.android.synthetic.main.raw_movie_items.view.*
 
-class MovieAdapter(private val context: Context) :
+class MovieAdapter(private val context: Context, private val mListener: (Result) -> Unit) :
     RecyclerView.Adapter<MovieAdapter.NotificationAdapterViewHolder>() {
 
     private var movieList = mutableListOf<Result>()
@@ -26,7 +26,7 @@ class MovieAdapter(private val context: Context) :
         RecyclerView.ViewHolder(itemView) {
         val ImageView = itemView.rv_movie_img
         val title = itemView.rv_movie_text
-        val imageProgress = itemView.rv_movie_progress_bar
+        val imageProgress = itemView.fragment_movie_detail_progress_bar
     }
 
     public fun submitList(list: List<Result>) {
@@ -80,6 +80,10 @@ class MovieAdapter(private val context: Context) :
                 .into(holder.ImageView)
         else {
             holder.imageProgress.visibility = View.GONE
+        }
+
+        holder.itemView.setOnClickListener {
+            mListener.invoke(items) // <- item instance of ItemObject
         }
     }
 

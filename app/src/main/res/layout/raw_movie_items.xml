@@ -40,7 +40,7 @@
     </com.google.android.material.card.MaterialCardView>
 
     <ProgressBar
-        android:id="@+id/rv_movie_progress_bar"
+        android:id="@+id/fragment_movie_detail_progress_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"

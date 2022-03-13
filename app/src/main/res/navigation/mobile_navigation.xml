@@ -51,5 +51,9 @@
         android:id="@+id/movieDetailFragment"
         android:name="com.muhammad_ammar.tentwenty.view.fragments.moview_detail.MovieDetailFragment"
         android:label="MovieDetailFragment"
-        tools:layout="@layout/fragment_movie_detial" />
+        tools:layout="@layout/fragment_movie_detial" >
+        <argument
+            android:name="movie_id"
+            app:argType="string" />
+    </fragment>
 </navigation>

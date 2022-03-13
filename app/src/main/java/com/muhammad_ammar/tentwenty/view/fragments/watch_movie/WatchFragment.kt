@@ -29,7 +29,13 @@ class WatchFragment :
 
     private lateinit var upcomingMoviesModelResponse: UpcomingMoviesModelResponse
     private val notificationAdapter: MovieAdapter by lazy {
-        MovieAdapter(requireContext())
+        MovieAdapter(requireContext()) {
+            findNavController().navigate(
+                WatchFragmentDirections.actionNavigationHomeToMovieDetailFragment(
+                    it.id.toString()
+                )
+            )
+        }
     }
 
     override fun inOnCreateView(mRootView: ViewGroup, savedInstanceState: Bundle?) {

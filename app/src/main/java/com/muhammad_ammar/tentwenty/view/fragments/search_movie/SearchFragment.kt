@@ -19,6 +19,7 @@ import com.muhammad_ammar.tentwenty.models.genere.Genre
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.Result
 import com.muhammad_ammar.tentwenty.util.MaterialDialogHelper
 import com.muhammad_ammar.tentwenty.view.fragments.base.MainMVVMNavigationFragment
+import com.muhammad_ammar.tentwenty.view.fragments.watch_movie.WatchFragmentDirections
 import kotlinx.android.synthetic.main.fragment_search.*
 import kotlinx.android.synthetic.main.search_header_layout.view.*
 import kotlinx.coroutines.launch
@@ -41,7 +42,13 @@ class SearchFragment :
         SearchAdapter(requireContext())
     }
     private val searchSecondAdapter: SearchSecondAdapter by lazy {
-        SearchSecondAdapter(requireContext())
+        SearchSecondAdapter(requireContext()) {
+            findNavController().navigate(
+                SearchFragmentDirections.actionSearchFragmentToMovieDetailFragment(
+                    it.id.toString()
+                )
+            )
+        }
     }
     private lateinit var mainListResults: List<Result>
     private lateinit var genre: List<Genre>
