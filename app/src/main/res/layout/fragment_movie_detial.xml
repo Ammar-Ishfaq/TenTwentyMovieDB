@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/upperrel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_361sdp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/movieimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_361sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/image4" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_361sdp"
+                    android:alpha="0.18"
+                    android:background="#C4C4C4"
+                    android:scaleType="fitXY" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/image_blur_top_btm_grad" />
+            </FrameLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/movie_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/kingsman_logo" />
+
+                <TextView
+                    android:id="@+id/movie_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movie_logo"
+                    android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="3dp"
+                    android:text="In theaters december 22, 2021"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_16sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/get_tickets_rel"
+                    android:layout_width="@dimen/_243sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/movie_date"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/get_ticket_background">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:fontFamily="@font/poppins_semi_bold"
+                        android:text="Get Tickets"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_14sdp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_243sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/get_tickets_rel"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/watch_trailer_backgound">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="?selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:id="@+id/pause_icon"
+                            android:layout_width="@dimen/_8sdp"
+                            android:layout_height="@dimen/_12sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:scaleType="center"
+                            android:src="@drawable/ic_resume" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_15sdp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:layout_toEndOf="@+id/pause_icon"
+                            android:background="@null"
+                            android:fontFamily="@font/poppins_semi_bold"
+                            android:paddingTop="5dp"
+                            android:text="Watch Trailer"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_14sdp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/back_btn_rel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <ImageButton
+                    android:id="@+id/backbuttonicon"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_back_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/backbuttonicon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingTop="3dp"
+                    android:text="Watch"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_16sdp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/upperrel"
+            android:layout_margin="@dimen/_15sdp">
+
+            <TextView
+                android:id="@+id/genre_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="5dp"
+                android:text="Get Tickets"
+                android:textAlignment="center"
+                android:textColor="#202C43"
+                android:textSize="@dimen/_16sdp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/genre_type_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_below="@+id/genre_text"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/row_genre" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.4dp"
+                android:layout_below="@+id/genre_type_recyclerview"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/overview_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line"
+                android:background="@null"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingTop="5dp"
+                android:text="Overview"
+                android:textAlignment="center"
+                android:textColor="#202C43"
+                android:textSize="@dimen/_16sdp" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/overview_text"
+                android:background="@null"
+                android:fontFamily="@font/poppins_light"
+                android:paddingTop="5dp"
+                android:text="As a collection of history's worst tyrants and criminal masterminds gather to plot a war to wipe out millions, one man must race against time to stop them. Discover the origins of the very first independent intelligence agency in The King's Man. The Comic Book “The Secret Service” by Mark Millar and Dave Gibbons."
+                android:textColor="#8F8F8F"
+                android:textSize="@dimen/_12sdp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

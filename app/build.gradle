@@ -102,6 +102,6 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.1'
 // Feature module Support
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
-
+    implementation 'nl.bryanderidder:themed-toggle-button-group:1.4.1'
 
 }

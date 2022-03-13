@@ -1,6 +1,7 @@
 package com.muhammad_ammar.tentwenty.backend
 
 import com.muhammad_ammar.tentwenty.models.genere.GenereResponse
+import com.muhammad_ammar.tentwenty.models.movie_details.MovieDetailResponse
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.UpcomingMoviesModelResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -19,6 +20,6 @@ interface MyAPICall {
     suspend fun getMovieDetail(
         @Path("ID") ID: Int,
         @Query("api_key") apiKey: String
-    ): UpcomingMoviesModelResponse
+    ): MovieDetailResponse
 
 }

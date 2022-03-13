@@ -28,21 +28,33 @@
         <entry key="..\:/_Ammar/ms/TenTwentyApp/MuhammadAmmarTenTwentyApp/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/MuhammadAmmarTenTwentyApp/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/MuhammadAmmarTenTwentyApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.187" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/bottom_bar_bg.xml" value="0.17" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/clicked_background.xml" value="0.187" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/fading_snackbar_background.xml" value="0.1685" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.187" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/ic_resume.xml" value="0.187" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/image_blur_grad.xml" value="0.1685" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/image_blur_top_btm_grad.xml" value="0.127" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/navigation_bar_item_bg.xml" value="0.188" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/progress_dialog_rounded_bg.xml" value="0.17" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/toolbar_background.xml" value="0.187" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/watch_trailer_backgound.xml" value="0.187" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_main_1.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_search.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_watch.xml" value="0.22" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/get_tickets_layout.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_movie_items.xml" value="0.22" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_search_items.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_search_second_items.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/row_genre.xml" value="0.17708333333333334" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/row_hall.xml" value="0.17708333333333334" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/rv_items.xml" value="0.22" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/sample_dialog.xml" value="0.1" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/search_header_layout.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/watch_screen.xml" value="0.13333333333333333" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
       </map>
     </option>

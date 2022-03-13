@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_background">
+
+        <RelativeLayout
+            android:id="@+id/innertoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_black_back_icon" />
+
+            <TextView
+                android:id="@+id/movie_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@+id/back_btn"
+                android:background="@null"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingStart="-35dp"
+                android:paddingTop="5dp"
+                android:text="The Kings"
+                android:textAlignment="center"
+                android:textColor="#202C43"
+                android:textSize="@dimen/_16sdp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/intheaters_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/innertoolbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@null"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingTop="5dp"
+            android:text="In theaters december 22, 2021"
+            android:textAlignment="center"
+            android:textColor="#61C3F2"
+            android:textSize="@dimen/_12sdp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/select_seats_rel"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_25sdp">
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:text="Date"
+            android:textColor="#202C43"
+            android:textSize="@dimen/_16sdp" />
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/date_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_text"
+            app:flexWrap="wrap"
+            app:justifyContent="space_between"
+            app:toggle_selectableAmount="3">
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/tag1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                app:toggle_text="social" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/tag2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                app:toggle_text="music" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/tag3"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_margin="3dp"
+                app:toggle_text="music" />
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hall_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_group"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/row_hall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_seats_rel"
+        android:layout_width="@dimen/_243sdp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/get_ticket_background">
+
+        <Button
+            android:id="@+id/select_seats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackgroundBorderless"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Select Seats"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

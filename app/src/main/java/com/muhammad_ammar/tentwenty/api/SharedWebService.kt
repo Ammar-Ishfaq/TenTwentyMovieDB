@@ -28,7 +28,7 @@ class SharedWebService(
         }
     }
 
-    suspend fun getParticularUserById(id: Int) = withContext(dispatcher) {
+    suspend fun getMovieDetail(id: Int) = withContext(dispatcher) {
         safeApiCall {
             Result.success(apiServices.getMovieDetail(id, app.getApiKey()))
         }

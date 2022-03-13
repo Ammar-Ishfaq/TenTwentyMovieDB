@@ -5,7 +5,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.view.ViewGroup
-import androidx.compose.ui.text.toLowerCase
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -13,9 +12,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.muhammad_ammar.tentwenty.R
 import com.muhammad_ammar.tentwenty.adapter.SearchAdapter
 import com.muhammad_ammar.tentwenty.adapter.SearchSecondAdapter
+import com.muhammad_ammar.tentwenty.extensions.onDone
 import com.muhammad_ammar.tentwenty.extensions.setupProgressDialog
 import com.muhammad_ammar.tentwenty.koinDI.searchModule
-import com.muhammad_ammar.tentwenty.models.genere.GenereResponse
 import com.muhammad_ammar.tentwenty.models.genere.Genre
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.Result
 import com.muhammad_ammar.tentwenty.util.MaterialDialogHelper
@@ -46,7 +45,7 @@ class SearchFragment :
     }
     private lateinit var mainListResults: List<Result>
     private lateinit var genre: List<Genre>
-
+    private var resultFoundFlag = false
     override fun inOnCreateView(mRootView: ViewGroup, savedInstanceState: Bundle?) {
         val dialogHelper by inject<MaterialDialogHelper>()
         setupProgressDialog(viewModel.showHideProgressDialog, dialogHelper)
@@ -72,14 +71,30 @@ class SearchFragment :
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         fragment_search_included_layout.fragment_search_close.setOnClickListener {
-            findNavController().navigateUp()
+            if (resultFoundFlag) {
+                resultFoundFlag = false
+            } else findNavController().navigateUp()
         }
         fragment_search_included_layout.fragment_search_edit_text.addTextChangedListener(this)
+        fragment_search_included_layout.fragment_search_edit_text.onDone {
+            fragment_search_included_layout.before_search_result_layout.visibility = View.GONE;
+            fragment_search_included_layout.after_search_result_layout.visibility = View.VISIBLE;
+        }
+
         fragment_search_included_layout.fragment_search_edit_text.setOnFocusChangeListener { view, b ->
             if (view.isFocused) {
                 setSecondAdapter()
                 searchSecondAdapter.submitList(mainListResults, genre)
-            } else setAdapter()
+            } else if (resultFoundFlag.not())
+                setAdapter()
+        }
+        fragment_search_included_layout.up_to_remove_filter.setOnClickListener {
+            fragment_search_included_layout.fragment_search_edit_text.setText("")
+            resultFoundFlag = false
+            fragment_search_included_layout.before_search_result_layout.visibility = View.VISIBLE;
+            fragment_search_included_layout.after_search_result_layout.visibility = View.GONE;
+            setAdapter()
+
         }
         setAdapter()
 
@@ -104,12 +119,16 @@ class SearchFragment :
     }
 
     override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+        resultFoundFlag = true
         val list = ArrayList(mainListResults)
-        searchSecondAdapter.submitList(list.filter {
+        val tempFilterList = list.filter {
             it.title.lowercase(Locale.getDefault()).contains(
                 s.toString().lowercase(Locale.getDefault())
             )
-        }, genre)
+        }
+        fragment_search_included_layout.fragment_search_result_count.text =
+            tempFilterList.size.toString()
+        searchSecondAdapter.submitList(tempFilterList, genre)
 
 
     }

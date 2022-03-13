@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_navigation_home_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
     </fragment>
 
     <fragment
@@ -40,5 +43,13 @@
         <argument
             android:name="upcoming_movie"
             app:argType="com.muhammad_ammar.tentwenty.models.upcomingModelResponse.UpcomingMoviesModelResponse" />
+        <action
+            android:id="@+id/action_searchFragment_to_movieDetailFragment"
+            app:destination="@id/movieDetailFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.muhammad_ammar.tentwenty.view.fragments.moview_detail.MovieDetailFragment"
+        android:label="MovieDetailFragment"
+        tools:layout="@layout/fragment_movie_detial" />
 </navigation>
