@@ -1,4 +1,4 @@
-package com.muhammad_ammar.tentwenty.viewmodel
+package com.muhammad_ammar.tentwenty.view.fragments.base
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

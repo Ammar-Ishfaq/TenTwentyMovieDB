@@ -6,7 +6,8 @@ import com.muhammad_ammar.tentwenty.api.SharedWebService
 import com.muhammad_ammar.tentwenty.extensions.wrapWithEvent
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.UpcomingMoviesModelResponse
 import com.muhammad_ammar.tentwenty.util.AppUtils
-import com.muhammad_ammar.tentwenty.viewmodel.BaseViewModel
+import com.muhammad_ammar.tentwenty.util.Event
+import com.muhammad_ammar.tentwenty.view.fragments.base.BaseViewModel
 import kotlinx.coroutines.launch
 
 class WatchFragmentViewModel constructor(
@@ -14,7 +15,7 @@ class WatchFragmentViewModel constructor(
 ) : BaseViewModel() {
 
 
-    private var upComingMovie: MutableLiveData<UpcomingMoviesModelResponse> = MutableLiveData()
+    var upComingMovie: MutableLiveData<Event<UpcomingMoviesModelResponse>> = MutableLiveData()
 
     /**
      * hit the api
@@ -28,7 +29,7 @@ class WatchFragmentViewModel constructor(
 
                 onSuccess {
                     _showHideProgressDialog.value = false.wrapWithEvent()
-                    upComingMovie.value = it
+                    upComingMovie.value = it.wrapWithEvent()
 
                 }
 

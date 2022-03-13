@@ -18,13 +18,13 @@ class SharedWebService(
 
     suspend fun getUpcomingMovieList() = withContext(dispatcher) {
         safeApiCall {
-            Result.success(apiServices.getUpcomingMovieList())
+            Result.success(apiServices.getUpcomingMovieList(app.getApiKey()))
         }
     }
 
     suspend fun getParticularUserById(id: Int) = withContext(dispatcher) {
         safeApiCall {
-            Result.success(apiServices.getMovieDetail(id))
+            Result.success(apiServices.getMovieDetail(id, app.getApiKey()))
         }
     }
 }

@@ -3,7 +3,7 @@ package com.muhammad_ammar.tentwenty.util
 class AppUtils {
 
     companion object {
-        val BaseImageUrl = "https://api.themoviedb.org/3/movie/"
+        val BaseImageUrl = "https://image.tmdb.org/t/p/w500"
         val SERVER_NOT_RESPONDING_MESSAGE =
             "Server is not responding properly please try again later"
         val INTERNET_CONNECTION_ERROR_MESSAGE =

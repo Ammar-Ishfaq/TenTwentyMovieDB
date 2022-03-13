@@ -11,4 +11,5 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="more">More</string>
+    <string name="movie_image">MovieImage</string>
 </resources>
