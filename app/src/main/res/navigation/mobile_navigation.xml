@@ -7,15 +7,12 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.muhammad_ammar.tentwenty.view.fragments.home.WatchFragment"
+        android:name="com.muhammad_ammar.tentwenty.view.fragments.watch_movie.WatchFragment"
         android:label="@string/title_watch"
-        tools:layout="@layout/fragment_watch" >
+        tools:layout="@layout/fragment_watch">
         <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
-        <action
-            android:id="@+id/action_navigation_home_to_navigation_notifications"
-            app:destination="@id/navigation_notifications" />
+            android:id="@+id/action_navigation_home_to_searchFragment"
+            app:destination="@id/searchFragment" />
     </fragment>
 
     <fragment
@@ -28,10 +25,20 @@
         android:id="@+id/navigation_notifications"
         android:name="com.muhammad_ammar.tentwenty.view.fragments.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" >
+        tools:layout="@layout/fragment_notifications">
         <argument
             android:name="name_str"
-            app:argType="string"
-            android:defaultValue="empty string" />
+            android:defaultValue="empty string"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.muhammad_ammar.tentwenty.view.fragments.search_movie.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_search">
+
+        <argument
+            android:name="upcoming_movie"
+            app:argType="com.muhammad_ammar.tentwenty.models.upcomingModelResponse.UpcomingMoviesModelResponse" />
     </fragment>
 </navigation>

@@ -49,4 +49,10 @@ class MainActivity : BaseActivity() {
 //        )//this will hide the title bar titles
         nav_view.setupWithNavController(navController)
     }
+
+    override fun onBackPressed() {
+        if (navController.popBackStack().not()) {
+            finish()
+        }
+    }
 }

@@ -29,12 +29,15 @@
         <entry key="..\:/_Ammar/ms/TenTwentyApp/MuhammadAmmarTenTwentyApp/app/src/main/res/layout/fragment_home.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/MuhammadAmmarTenTwentyApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/bottom_bar_bg.xml" value="0.17" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/image_blur_grad.xml" value="0.1685" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/navigation_bar_item_bg.xml" value="0.188" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/drawable/progress_dialog_rounded_bg.xml" value="0.17" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_watch.xml" value="0.1796875" />
-        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_movie_items.xml" value="0.49029982363315694" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_search.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_watch.xml" value="0.22" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_movie_items.xml" value="0.22" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_search_items.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/rv_items.xml" value="0.22" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/sample_dialog.xml" value="0.1" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1796875" />

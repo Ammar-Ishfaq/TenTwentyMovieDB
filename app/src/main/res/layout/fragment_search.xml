@@ -4,44 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".view.fragments.watch_movie.WatchFragment">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize"
-        android:background="@color/app_white"
-        android:padding="@dimen/_10sdp">
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"
+        android:background="@drawable/ic_search_bg"
+        android:paddingHorizontal="@dimen/_15sdp">
 
-        <TextView
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:fontFamily="@font/poppins_medium"
-            android:text="@string/watch"
-            android:textColor="#202C43"
-            android:textSize="16sp" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_search" />
 
         <ImageButton
-            android:id="@+id/fragment_watch_search"
+            android:id="@+id/fragment_search_close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:background="@android:color/transparent"
-            android:src="@drawable/ic_search" />
+            android:src="@drawable/ic_close" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/fragment_watch_rv"
+        android:id="@+id/fragment_search_rv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/app_light_gray"
         android:clipToPadding="false"
         android:paddingBottom="@dimen/_10sdp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
         tools:itemCount="10"
-        tools:listitem="@layout/raw_movie_items" />
+        tools:listitem="@layout/raw_search_items" />
 
 </LinearLayout>

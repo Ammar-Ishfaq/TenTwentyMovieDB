@@ -5,7 +5,6 @@ plugins {
     id 'kotlin-kapt'//for the  static views capturing
     id 'kotlinx-serialization'
     id "androidx.navigation.safeargs.kotlin"//for getting navigation direction
-
 }
 
 android {

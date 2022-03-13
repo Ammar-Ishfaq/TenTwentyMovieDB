@@ -1,4 +1,4 @@
-package com.muhammad_ammar.tentwenty.view.fragments.home
+package com.muhammad_ammar.tentwenty.view.fragments.watch_movie
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
