@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.FirstKotlinProject" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+    <style name="m_ammar_tentwenty" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/app_light_gray</item>
         <item name="colorPrimaryVariant">@color/app_white</item>

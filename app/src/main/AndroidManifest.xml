@@ -12,12 +12,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.FirstKotlinProject">
+        android:theme="@style/m_ammar_tentwenty">
         <activity
             android:name="com.muhammad_ammar.tentwenty.view.activities.MainActivity"
             android:exported="false"
             android:label="@string/title_activity_main"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"/>
         <activity
             android:name="com.muhammad_ammar.tentwenty.view.activities.Splash"
             android:screenOrientation="portrait">

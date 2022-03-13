@@ -6,29 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_15sdp"
-        android:background="@drawable/ic_search_bg"
-        android:paddingHorizontal="@dimen/_15sdp">
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_search" />
-
-        <ImageButton
-            android:id="@+id/fragment_search_close"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ic_close" />
-    </RelativeLayout>
+    <include
+        android:id="@+id/fragment_search_included_layout"
+        layout="@layout/search_header_layout" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/fragment_search_rv"
