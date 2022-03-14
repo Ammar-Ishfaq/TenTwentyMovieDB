@@ -16,7 +16,7 @@ class Splash : BaseActivity() {
             val mIntent = Intent(this@Splash, MainActivity::class.java)
             startActivity(mIntent)
             finish()
-        }, 100)
+        }, 2000)
 
     }
 
