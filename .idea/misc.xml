@@ -43,7 +43,10 @@
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_main_1.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_search.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_get_tickets_layout.xml" value="0.17552083333333332" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_movie_detial.xml" value="0.11348684210526316" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_notifications.xml" value="0.1796875" />
+        <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_search.xml" value="0.1" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/fragment_watch.xml" value="0.22" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/get_tickets_layout.xml" value="0.1796875" />
         <entry key="..\:/_Ammar/ms/TenTwentyApp/TenTwentyMovieDB/app/src/main/res/layout/raw_movie_items.xml" value="0.22" />

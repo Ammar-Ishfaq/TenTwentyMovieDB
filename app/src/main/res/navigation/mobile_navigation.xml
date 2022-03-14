@@ -25,16 +25,6 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.muhammad_ammar.tentwenty.view.fragments.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications">
-        <argument
-            android:name="name_str"
-            android:defaultValue="empty string"
-            app:argType="string" />
-    </fragment>
-    <fragment
         android:id="@+id/searchFragment"
         android:name="com.muhammad_ammar.tentwenty.view.fragments.search_movie.SearchFragment"
         android:label="SearchFragment"
@@ -51,9 +41,17 @@
         android:id="@+id/movieDetailFragment"
         android:name="com.muhammad_ammar.tentwenty.view.fragments.moview_detail.MovieDetailFragment"
         android:label="MovieDetailFragment"
-        tools:layout="@layout/fragment_movie_detial" >
+        tools:layout="@layout/fragment_movie_detial">
         <argument
             android:name="movie_id"
             app:argType="string" />
+        <action
+            android:id="@+id/action_movieDetailFragment_to_getTicketsFragment"
+            app:destination="@id/getTicketsFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/getTicketsFragment"
+        android:name="com.muhammad_ammar.tentwenty.view.fragments.get_tickets.GetTicketsFragment"
+        android:label="GetTicketsFragment"
+        tools:layout="@layout/fragment_get_tickets_layout" />
 </navigation>

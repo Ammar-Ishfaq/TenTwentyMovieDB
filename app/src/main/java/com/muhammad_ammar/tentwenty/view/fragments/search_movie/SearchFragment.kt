@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.muhammad_ammar.tentwenty.R
 import com.muhammad_ammar.tentwenty.adapter.SearchAdapter
 import com.muhammad_ammar.tentwenty.adapter.SearchSecondAdapter
+import com.muhammad_ammar.tentwenty.extensions.hideKeyboard
 import com.muhammad_ammar.tentwenty.extensions.onDone
 import com.muhammad_ammar.tentwenty.extensions.setupProgressDialog
 import com.muhammad_ammar.tentwenty.koinDI.searchModule
@@ -84,6 +85,7 @@ class SearchFragment :
         }
         fragment_search_included_layout.fragment_search_edit_text.addTextChangedListener(this)
         fragment_search_included_layout.fragment_search_edit_text.onDone {
+            fragment_search_included_layout.fragment_search_edit_text.hideKeyboard()
             fragment_search_included_layout.before_search_result_layout.visibility = View.GONE;
             fragment_search_included_layout.after_search_result_layout.visibility = View.VISIBLE;
         }

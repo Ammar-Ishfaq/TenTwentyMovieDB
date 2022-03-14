@@ -3,10 +3,11 @@ package com.muhammad_ammar.tentwenty.backend
 import com.muhammad_ammar.tentwenty.models.genere.GenereResponse
 import com.muhammad_ammar.tentwenty.models.movie_details.MovieDetailResponse
 import com.muhammad_ammar.tentwenty.models.upcomingModelResponse.UpcomingMoviesModelResponse
-import retrofit2.http.GET
-import retrofit2.http.Path
-import retrofit2.http.Query
-import retrofit2.http.QueryMap
+import com.muhammad_ammar.tentwenty.models.youtube_data.YoutubeVideoData
+import com.muhammad_ammar.tentwenty.models.youtube_data.YoutubeVideoResponse
+import com.muhammad_ammar.tentwenty.util.safeApiCall
+import kotlinx.coroutines.withContext
+import retrofit2.http.*
 
 interface MyAPICall {
 
@@ -21,5 +22,12 @@ interface MyAPICall {
         @Path("ID") ID: Int,
         @Query("api_key") apiKey: String
     ): MovieDetailResponse
+
+
+    @POST
+    suspend fun getYoutubeVideoData(
+        @Body body: YoutubeVideoData,
+        @Url url: String
+    ): YoutubeVideoResponse
 
 }

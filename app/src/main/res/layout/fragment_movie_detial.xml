@@ -80,9 +80,12 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/movie_date"
                     android:layout_centerHorizontal="true"
-                    android:background="@drawable/get_ticket_background">
+                    android:background="@drawable/get_ticket_background"
+                    android:clickable="true"
+                    android:focusable="true">
 
                     <Button
+                        android:id="@+id/fragment_movie_detail_get_ticket"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?selectableItemBackgroundBorderless"

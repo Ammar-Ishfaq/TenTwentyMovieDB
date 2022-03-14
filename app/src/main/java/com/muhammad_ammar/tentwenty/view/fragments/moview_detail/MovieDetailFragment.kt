@@ -5,18 +5,15 @@ import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.muhammad_ammar.tentwenty.R
-import com.muhammad_ammar.tentwenty.adapter.MovieAdapter
 import com.muhammad_ammar.tentwenty.util.MaterialDialogHelper
 import com.muhammad_ammar.tentwenty.view.fragments.base.MainMVVMNavigationFragment
 import com.muhammad_ammar.tentwenty.extensions.setupProgressDialog
 import com.muhammad_ammar.tentwenty.koinDI.movieDetailModule
 import com.muhammad_ammar.tentwenty.models.movie_details.MovieDetailResponse
-import kotlinx.android.synthetic.main.fragment_watch.*
 import kotlinx.coroutines.launch
 import org.koin.android.ext.android.inject
 import org.koin.core.module.Module
@@ -55,7 +52,7 @@ class MovieDetailFragment :
     }
 
     private fun attachedViewModel() {
-        observe(viewModel.MovieDetailResponse) {
+        observe(viewModel.movieDetailResponse) {
             if (!it.consumed) it.consume()?.let { it1 ->
                 movieDetailResponse = it1
                 fragment_movie_detail_description.text = movieDetailResponse.overview
@@ -101,6 +98,9 @@ class MovieDetailFragment :
         setAdapter()
         fragment_movie_back_btn.setOnClickListener {
             findNavController().navigateUp()
+        }
+        fragment_movie_detail_get_ticket.setOnClickListener {
+            findNavController().navigate(MovieDetailFragmentDirections.actionMovieDetailFragmentToGetTicketsFragment())
         }
     }
 

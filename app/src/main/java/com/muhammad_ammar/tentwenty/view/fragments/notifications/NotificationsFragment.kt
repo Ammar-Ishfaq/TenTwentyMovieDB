@@ -14,7 +14,6 @@ import org.koin.android.ext.android.inject
 
 class NotificationsFragment :
     MainMVVMNavigationFragment<NotificationsViewModel>(NotificationsViewModel::class) {
-    private val navArgs by navArgs<NotificationsFragmentArgs>()
 
     override fun getLayoutResId(): Int {
         return R.layout.fragment_notifications
@@ -23,7 +22,6 @@ class NotificationsFragment :
     override fun inOnCreateView(mRootView: ViewGroup, savedInstanceState: Bundle?) {
         val dialogHelper by inject<MaterialDialogHelper>()
         setupProgressDialog(viewModel.showHideProgressDialog, dialogHelper)
-        val strArgumentGetting = navArgs.nameStr
 
         lifecycleScope.launch {
             attachViewModel()
